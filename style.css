@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+align-content: center;
+}
+.head{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    bottom: -30px;
+    align-items: center;
+    left: 50px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+}
+.head :is(i){    
+    font-size: 30px;
+}
+.bottons{
+    position: relative;
+    left: 1000px;
+    }
+.botton1{
+    font-variant: small-caps;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(217, 217, 217) ;
+    width: 150px;
+    text-align: start;
+    padding-left: 20px;
+}
+.botton2{
+    position: absolute;
+    right:  5px;
+    top: 5px;
+    font-variant: small-caps;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 70px;
+    padding: 5px;
+}
+/* main */
+.card{
+    display: grid;
+    grid-template-areas: 
+    "card1 card2 card2"
+    "card1 card2 card2"
+    "card1 card3 card4"
+    "card1 card3 card4"
+    ;
+    padding-top: 50px;
+    gap: 10px;
+}
+.card1,.card2,.card3,.card4{
+text-transform: capitalize;
+    border-radius: 20px;
+    padding: 30px;
+}
+.card1{
+    position: relative;
+    color: white;
+    background-color: #262626;
+    grid-area: card1;
+    height: 500px;
+}
+.card1 :is(.p2){
+    font-size: 70px;
+}
+.card1 :is(.p1){
+    font-size: 20px;
+    
+}
+.card1 :is(.shop :is(.p3)){
+    font-size: 10px;
+    color: rgb(148, 148, 148);
+text-transform: uppercase;    
+}
+.img1{
+    position: absolute;
+    top: 200PX;
+    right: 0px;
+}
+.card1 :is(.shop){
+    padding: 10px;
+    background-color: white;
+    width: fit-content;
+    color: black;
+    position: absolute;
+    bottom: 50px;
+    border-radius: 10px;
+}
+/* card2 */
+.card2{
+    background-color: #d7d8dc;
+    grid-area: card2;
+    position: relative;
+    
+}
+.card2 :is(.p2){
+    position: absolute;
+    bottom: 30px;
+    font-size: 40px;
+
+}
+.card2 :is(.p1){
+    text-transform: uppercase;
+
+}
+.card2 :is(img){
+position: absolute;
+right: 0px;
+bottom: 0px;
+width: 250px
+}
+.card2 :is(i){
+    position: absolute;
+    background: none;
+    right: 20px;
+    top: 2px;
+    font-size: 30px;
+
+}
+.card3{
+    position: relative;
+    background-color: #b386fd;
+    grid-area: card3;
+}
+.card3 :is(.p2){
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    bottom: 12px;
+}
+.card3 :is(.p1){
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    
+}
+.card3 :is(i){
+    position: absolute;
+    background: none;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+
+}
+.card4{
+    position: relative;
+    background-color: #b1f041;
+    grid-area: card4;
+}
+.card4 :is(.p2){
+    position: absolute;
+    font-size: 40px;
+    bottom: 12px;
+}
+.card4 :is(.p1){
+    text-transform: uppercase;
+    position: absolute;
+}
+.card4 :is(i){
+    position: absolute;
+    background: none;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+
+}
